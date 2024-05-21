@@ -23,6 +23,11 @@ As a DevOps and Cloud Engineer with over 7 years of experience, I am dedicated t
     <img src="https://img.shields.io/badge/-GitHub_Actions-2088FF?&style=for-the-badge&logo=GitHub-Actions&logoColor=white" />
     <img src="https://img.shields.io/badge/-Terraform-623CE4?&style=for-the-badge&logo=Terraform&logoColor=white" />
     <img src="https://img.shields.io/badge/-Ansible-EE0000?&style=for-the-badge&logo=Ansible&logoColor=white" />
+    <img src="https://img.shields.io/badge/-Nexus-4E73B9?&style=for-the-badge&logo=Sonatype&logoColor=white" />
+    <img src="https://img.shields.io/badge/-SonarQube-4E9BCD?&style=for-the-badge&logo=SonarQube&logoColor=white" />
+    <img src="https://img.shields.io/badge/-Tomcat-F8DC75?&style=for-the-badge&logo=Apache%20Tomcat&logoColor=black" />
+    <img src="https://img.shields.io/badge/-Docker-2496ED?&style=for-the-badge&logo=Docker&logoColor=white" />
+
 </div>
 
 ### Cloud Platforms
