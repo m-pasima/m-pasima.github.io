@@ -49,13 +49,6 @@ As a DevOps and Cloud Engineer with over 7 years of experience, I am dedicated t
     <img src="https://img.shields.io/badge/-Grafana-F46800?&style=for-the-badge&logo=Grafana&logoColor=white" />
 </div>
 
-## Certifications
-<div>
-    <img src="https://img.shields.io/badge/-AWS_Certified_Solutions_Architect-FF9900?&style=for-the-badge&logo=Amazon-AWS&logoColor=white" />
-    <img src="https://img.shields.io/badge/-Google_Professional_Cloud_Architect-4285F4?&style=for-the-badge&logo=Google-Cloud&logoColor=white" />
-    <img src="https://img.shields.io/badge/-Certified_Kubernetes_Administrator-326CE5?&style=for-the-badge&logo=Kubernetes&logoColor=white" />
-</div>
-
 ## Professional Experience
 
 ### Senior DevOps Engineer, Atomix LTD
