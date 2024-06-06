@@ -9,7 +9,7 @@ As a DevOps and Cloud Engineer with over 7 years of experience, I am dedicated t
 | Skill                                         | Associated Project         |
 |-----------------------------------------------|----------------------------|
 | CI/CD Automation                              | <a href="https://github.com/m-pasima/CI-CD-Pipeline-Project">CI/CD Pipeline Project</a> |
-| Infrastructure as Code (IaC)                  | <a href="https://github.com/m-pasima/Infrastructure-Automation-Project">Infrastructure Automation Project</a> |
+| Infrastructure as Code (IaC)                  | <a href="https://github.com/m-pasima/Aws-terraform-multi-tier-application.git">AWS 3 Tier architecture with ECS Terraform  Project</a> |
 | Security and Compliance                       | <a href="https://github.com/m-pasima/Security-Implementation-Project.git">Security Implementation Project</a> |
 | Cloud Architecture and Deployment             | <a href="https://github.com/m-pasima/Cloud-Deployment-Project.git">Cloud Deployment Project</a> |
 | Containerization and Orchestration            | <a href="https://github.com/m-pasima/Kubernetes-Deployment-Project.git">Kubernetes Deployment Project</a> |
