@@ -1,52 +1,98 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
-    text-align: center;
+    color: #333;
+    line-height: 1.6;
 }
+
 header {
-    background-color: #333;
+    background: #0072b1;
     color: white;
     padding: 10px 0;
 }
+
 header h1 {
     margin: 0;
+    font-size: 2em;
 }
-header a img {
+
+header nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    padding: 10px 0;
+}
+
+header nav a img {
     vertical-align: middle;
-    margin-left: 10px;
 }
-main {
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
     padding: 20px;
 }
+
 section {
-    margin: 20px 0;
+    padding: 20px 0;
 }
+
+section h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
 table {
     width: 100%;
     border-collapse: collapse;
     margin: 20px 0;
 }
+
 table, th, td {
     border: 1px solid #ddd;
 }
+
 th, td {
     padding: 10px;
     text-align: left;
 }
+
 .tool-category {
     margin: 20px 0;
 }
+
 .tools-container img {
     margin: 5px;
+    height: 40px;
 }
+
 #experience-container {
     text-align: left;
-    margin: 20px auto;
-    max-width: 800px;
 }
+
 footer {
-    background-color: #f8f9fa;
+    background: #f8f9fa;
     padding: 10px 0;
+    text-align: center;
     margin-top: 20px;
 }
+
+@media (max-width: 768px) {
+    header nav a {
+        margin: 5px 0;
+        padding: 5px 0;
+    }
+    .container {
+        width: 95%;
+    }
+}
+
