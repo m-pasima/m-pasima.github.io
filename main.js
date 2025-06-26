@@ -1,12 +1,7 @@
 document.addEventListener('DOMContentLoaded', function () {
- pasimaupdate-portfolio-design-for-sophistication
-    const theme = localStorage.getItem('theme');
-    if (theme === 'dark') {
-
-    const savedTheme = localStorage.getItem('theme');
-    if (savedTheme === 'dark') {
-    main
-        document.body.classList.add('dark');
+    const savedTheme = localStorage.getItem("theme");
+    if (savedTheme === "dark") {
+        document.body.classList.add("dark");
     }
     const skills = [
         {
@@ -213,14 +208,6 @@ document.addEventListener('DOMContentLoaded', function () {
     loadTools('monitoring-tools', monitoringTools);
     loadSkillBars();
     loadExperience();
- pasimaupdate-portfolio-design-for-sophistication
-
-    const toggle = document.getElementById('dark-toggle');
-    if (toggle) {
-        toggle.addEventListener('click', () => {
-            document.body.classList.toggle('dark');
-            const current = document.body.classList.contains('dark') ? 'dark' : 'light';
-            localStorage.setItem('theme', current);
 
     const toggle = document.getElementById("dark-toggle");
     if (toggle) {
@@ -241,7 +228,6 @@ document.addEventListener('DOMContentLoaded', function () {
     if (scrollBtn) {
         scrollBtn.addEventListener("click", () => {
             window.scrollTo({ top: 0, behavior: "smooth" });
- main
         });
     }
 });

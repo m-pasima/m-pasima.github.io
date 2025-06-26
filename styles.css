@@ -1,5 +1,4 @@
 :root {
- pasimaupdate-portfolio-design-for-sophistication
     --font-body: "Poppins", sans-serif;
     --section-alt-bg: #f5f5f5;
     --bg-color: #ffffff;
@@ -31,7 +30,6 @@ html {
 
 body {
     font-family: 'Poppins', Arial, sans-serif;
- main
     margin: 0;
     padding: 0;
     color: var(--text-color);
@@ -43,14 +41,12 @@ body {
 body.dark {
     --bg-color: #1a1a1a;
     --text-color: #eaeaea;
- pasimaupdate-portfolio-design-for-sophistication
     --header-bg: #0d4f70;
     --footer-bg: #111111;
 
     --accent-color: #26547c;
     --header-bg: var(--accent-color);
     --footer-bg: #111;
- main
     --card-bg: #242424;
 }
 
@@ -166,13 +162,11 @@ table {
     border-collapse: collapse;
     margin: 20px 0;
     background: var(--card-bg);
-pasimaupdate-portfolio-design-for-sophistication
 
     box-shadow: 0 1px 2px rgba(0,0,0,0.1);
 }
 
 table, th, td {
- main
     border: 1px solid #ddd;
     box-shadow: 0 1px 2px rgba(0,0,0,0.1);
 }
@@ -188,16 +182,13 @@ tbody tr:nth-child(odd) {
     background-color: rgba(0,0,0,0.03);
 }
 
- pasimaupdate-portfolio-design-for-sophistication
 
 
- main
 .tool-category {
     margin: 20px 0;
 }
 
 .tools-container {
- pasimaupdate-portfolio-design-for-sophistication
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
     gap: 15px;
@@ -234,7 +225,6 @@ tbody tr:nth-child(odd) {
 .tools-container img {
     height: 40px;
     transition: transform 0.2s;
- main
 }
 
 .tools-container img:hover {
