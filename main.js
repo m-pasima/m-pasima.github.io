@@ -1,4 +1,8 @@
 document.addEventListener('DOMContentLoaded', function () {
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme === 'dark') {
+        document.body.classList.add('dark');
+    }
     const skills = [
         {
             skill: "CI/CD Automation",
@@ -151,25 +155,54 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     function loadExperience() {
-        const container = document.getElementById('experience-container');
+        const container = document.getElementById("experience-container");
         experiences.forEach(exp => {
-            const div = document.createElement('div');
-            div.className = 'experience';
+            const div = document.createElement("div");
+            div.className = "experience";
+            const listId = "exp-" + Math.random().toString(36).slice(2,9);
             div.innerHTML = `
                 <h3>${exp.title}</h3>
                 <p><strong>${exp.date}</strong></p>
-                <ul>
-                    ${exp.responsibilities.map(responsibility => `<li>${responsibility}</li>`).join('')}
+                <ul id="${listId}" class="collapsed">
+                    ${exp.responsibilities.map(r => `<li>${r}</li>`).join('')}
                 </ul>
+                <button class="toggle-resp" data-target="${listId}">Show Details</button>
             `;
             container.appendChild(div);
         });
+        document.querySelectorAll(".toggle-resp").forEach(btn => {
+            btn.addEventListener("click", () => {
+                const ul = document.getElementById(btn.dataset.target);
+                ul.classList.toggle("collapsed");
+                btn.textContent = ul.classList.contains("collapsed") ? "Show Details" : "Hide Details";
+            });
+        });
     }
-
     loadSkills();
     loadTools('cicd-tools', cicdTools);
     loadTools('cloud-tools', cloudTools);
     loadTools('container-tools', containerTools);
     loadTools('monitoring-tools', monitoringTools);
     loadExperience();
+    const toggle = document.getElementById("dark-toggle");
+    if (toggle) {
+        toggle.addEventListener("click", () => {
+            document.body.classList.toggle("dark");
+            const mode = document.body.classList.contains("dark") ? "dark" : "light";
+            localStorage.setItem("theme", mode);
+        });
+    }
+    const scrollBtn = document.getElementById("scroll-top");
+    window.addEventListener("scroll", () => {
+        if (window.scrollY > 300) {
+            scrollBtn.style.display = "block";
+        } else {
+            scrollBtn.style.display = "none";
+        }
+    });
+    if (scrollBtn) {
+        scrollBtn.addEventListener("click", () => {
+            window.scrollTo({ top: 0, behavior: "smooth" });
+        });
+    }
 });
