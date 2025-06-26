@@ -65,7 +65,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     const skillLevels = [
         { name: "AWS", level: 90 },
-        { name: "Azure", level: 70 },
+        { name: "Google Cloud Platform (GCP)", level: 70 },
         { name: "Kubernetes", level: 85 },
         { name: "Terraform", level: 80 },
         { name: "Jenkins", level: 75 },
