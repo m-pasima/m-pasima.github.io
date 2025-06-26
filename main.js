@@ -63,6 +63,16 @@ document.addEventListener('DOMContentLoaded', function () {
         "https://img.shields.io/badge/-Grafana-F46800?&style=for-the-badge&logo=Grafana&logoColor=white"
     ];
 
+    const skillLevels = [
+        { name: "AWS", level: 90 },
+        { name: "Azure", level: 70 },
+        { name: "Kubernetes", level: 85 },
+        { name: "Terraform", level: 80 },
+        { name: "Jenkins", level: 75 },
+        { name: "GitHub Actions", level: 80 },
+        { name: "Docker", level: 90 }
+    ];
+
     const experiences = [
         {
             title: "Senior DevOps Engineer, Atomix LTD",
@@ -178,11 +188,25 @@ document.addEventListener('DOMContentLoaded', function () {
             });
         });
     }
+
+    function loadSkillBars() {
+        const container = document.getElementById('skill-bars');
+        skillLevels.forEach(skill => {
+            const wrapper = document.createElement('div');
+            wrapper.className = 'skill-bar';
+            wrapper.innerHTML = `
+                <span>${skill.name}</span>
+                <div class="skill-level"><div style="width:${skill.level}%"></div></div>
+            `;
+            container.appendChild(wrapper);
+        });
+    }
     loadSkills();
     loadTools('cicd-tools', cicdTools);
     loadTools('cloud-tools', cloudTools);
     loadTools('container-tools', containerTools);
     loadTools('monitoring-tools', monitoringTools);
+    loadSkillBars();
     loadExperience();
     const toggle = document.getElementById("dark-toggle");
     if (toggle) {
