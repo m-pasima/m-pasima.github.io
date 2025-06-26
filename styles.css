@@ -6,7 +6,7 @@
     --highlight-color: #20c997; /* turquoise accent */
     --header-bg: var(--accent-color);
     --header-text: #fff;
-    --footer-bg: #f8f9fa;
+    --footer-bg: var(--header-bg);
     --card-bg: #fff;
 }
 
@@ -29,7 +29,7 @@ body.dark {
     --text-color: #eaeaea;
     --accent-color: #26547c;
     --header-bg: var(--accent-color);
-    --footer-bg: #111;
+    --footer-bg: var(--header-bg);
     --card-bg: #242424;
 }
 
@@ -116,7 +116,9 @@ table {
     border-collapse: collapse;
     margin: 20px 0;
     background: var(--card-bg);
-    box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
 table, th, td {
@@ -128,8 +130,18 @@ th, td {
     text-align: left;
 }
 
+thead {
+    background: var(--accent-color);
+    color: #fff;
+}
+
 tbody tr:nth-child(odd) {
     background-color: rgba(0,0,0,0.03);
+}
+
+tbody tr:hover {
+    background-color: rgba(0,0,0,0.07);
+    transition: background 0.3s;
 }
 
 .tool-category {
@@ -220,9 +232,16 @@ body.dark .experience {
 
 footer {
     background: var(--footer-bg);
+    color: var(--header-text);
     padding: 10px 0;
     text-align: center;
     margin-top: 20px;
+}
+
+footer a {
+    color: inherit;
+    text-decoration: none;
+    margin-left: 5px;
 }
 
 @media (max-width: 768px) {
