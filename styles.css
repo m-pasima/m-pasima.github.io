@@ -1,15 +1,21 @@
 :root {
     --bg-color: #ffffff;
-    --text-color: #333;
-    --accent-color: #0072b1;
+    --text-color: #333333;
+    --accent-color: #083d77; /* navy blue */
+    --secondary-color: #006d77; /* teal */
+    --highlight-color: #20c997; /* turquoise accent */
     --header-bg: var(--accent-color);
     --header-text: #fff;
     --footer-bg: #f8f9fa;
     --card-bg: #fff;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Poppins', Arial, sans-serif;
     margin: 0;
     padding: 0;
     color: var(--text-color);
@@ -21,7 +27,8 @@ body {
 body.dark {
     --bg-color: #1a1a1a;
     --text-color: #eaeaea;
-    --header-bg: #0d4f70;
+    --accent-color: #26547c;
+    --header-bg: var(--accent-color);
     --footer-bg: #111;
     --card-bg: #242424;
 }
@@ -137,6 +144,11 @@ tbody tr:nth-child(odd) {
 
 .tools-container img {
     height: 40px;
+    transition: transform 0.2s;
+}
+
+.tools-container img:hover {
+    transform: scale(1.1);
 }
 
 .experience {
@@ -183,6 +195,29 @@ body.dark .experience {
     box-shadow: 0 2px 4px rgba(0,0,0,0.3);
 }
 
+.skill-bar {
+    margin: 10px 0;
+}
+
+.skill-bar span {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+.skill-level {
+    background: #e5e5e5;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.skill-level div {
+    height: 10px;
+    background: var(--highlight-color);
+    width: 0;
+    transition: width 1s ease-out;
+}
+
 footer {
     background: var(--footer-bg);
     padding: 10px 0;
@@ -199,3 +234,4 @@ footer {
         width: 95%;
     }
 }
+

@@ -1,6 +1,8 @@
 
 <a href="https://www.linkedin.com/in/nyanga-p-674721258/"><img src="https://img.shields.io/badge/-LinkedIn-0072b1?&style=for-the-badge&logo=linkedin&logoColor=white" /></a>
 
+[Download Resume](resume.pdf)
+
 ## Objective
 Results-driven self-taught DevOps Engineer with 6+ years specializing in cloud-native automation, CI/CD pipelines, and infrastructure-as-code.
  Expert in AWS, GCP, Kubernetes (EKS, GKE), and Terraform/Terragrunt, delivering scalable, secure solutions. Proven track record: accelerated
