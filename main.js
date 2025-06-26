@@ -37,30 +37,30 @@ document.addEventListener('DOMContentLoaded', function () {
     ];
 
     const cicdTools = [
-        "https://img.shields.io/badge/-Jenkins-D24939?&style=for-the-badge&logo=Jenkins&logoColor=white",
-        "https://img.shields.io/badge/-GitHub_Actions-2088FF?&style=for-the-badge&logo=GitHub-Actions&logoColor=white",
-        "https://img.shields.io/badge/-Terraform-623CE4?&style=for-the-badge&logo=Terraform&logoColor=white",
-        "https://img.shields.io/badge/-Ansible-EE0000?&style=for-the-badge&logo=Ansible&logoColor=white",
-        "https://img.shields.io/badge/-Nexus-4E73B9?&style=for-the-badge&logo=Sonatype&logoColor=white",
-        "https://img.shields.io/badge/-SonarQube-4E9BCD?&style=for-the-badge&logo=SonarQube&logoColor=white",
-        "https://img.shields.io/badge/-Tomcat-F8DC75?&style=for-the-badge&logo=Apache%20Tomcat&logoColor=black",
-        "https://img.shields.io/badge/-Docker-2496ED?&style=for-the-badge&logo=Docker&logoColor=white"
+        { src: "https://img.shields.io/badge/-Jenkins-D24939?&style=for-the-badge&logo=Jenkins&logoColor=white", name: "Jenkins" },
+        { src: "https://img.shields.io/badge/-GitHub_Actions-2088FF?&style=for-the-badge&logo=GitHub-Actions&logoColor=white", name: "GitHub Actions" },
+        { src: "https://img.shields.io/badge/-Terraform-623CE4?&style=for-the-badge&logo=Terraform&logoColor=white", name: "Terraform" },
+        { src: "https://img.shields.io/badge/-Ansible-EE0000?&style=for-the-badge&logo=Ansible&logoColor=white", name: "Ansible" },
+        { src: "https://img.shields.io/badge/-Nexus-4E73B9?&style=for-the-badge&logo=Sonatype&logoColor=white", name: "Nexus" },
+        { src: "https://img.shields.io/badge/-SonarQube-4E9BCD?&style=for-the-badge&logo=SonarQube&logoColor=white", name: "SonarQube" },
+        { src: "https://img.shields.io/badge/-Tomcat-F8DC75?&style=for-the-badge&logo=Apache%20Tomcat&logoColor=black", name: "Tomcat" },
+        { src: "https://img.shields.io/badge/-Docker-2496ED?&style=for-the-badge&logo=Docker&logoColor=white", name: "Docker" }
     ];
 
     const cloudTools = [
-        "https://img.shields.io/badge/-AWS-232F3E?&style=for-the-badge&logo=Amazon-AWS&logoColor=white",
-        "https://img.shields.io/badge/-GCP-4285F4?&style=for-the-badge&logo=Google-Cloud&logoColor=white"
+        { src: "https://img.shields.io/badge/-AWS-232F3E?&style=for-the-badge&logo=Amazon-AWS&logoColor=white", name: "AWS" },
+        { src: "https://img.shields.io/badge/-GCP-4285F4?&style=for-the-badge&logo=Google-Cloud&logoColor=white", name: "GCP" }
     ];
 
     const containerTools = [
-        "https://img.shields.io/badge/-Docker-2496ED?&style=for-the-badge&logo=Docker&logoColor=white",
-        "https://img.shields.io/badge/-Kubernetes-326CE5?&style=for-the-badge&logo=Kubernetes&logoColor=white",
-        "https://img.shields.io/badge/-Helm-0F1689?&style=for-the-badge&logo=Helm&logoColor=white"
+        { src: "https://img.shields.io/badge/-Docker-2496ED?&style=for-the-badge&logo=Docker&logoColor=white", name: "Docker" },
+        { src: "https://img.shields.io/badge/-Kubernetes-326CE5?&style=for-the-badge&logo=Kubernetes&logoColor=white", name: "Kubernetes" },
+        { src: "https://img.shields.io/badge/-Helm-0F1689?&style=for-the-badge&logo=Helm&logoColor=white", name: "Helm" }
     ];
 
     const monitoringTools = [
-        "https://img.shields.io/badge/-Prometheus-E6522C?&style=for-the-badge&logo=Prometheus&logoColor=white",
-        "https://img.shields.io/badge/-Grafana-F46800?&style=for-the-badge&logo=Grafana&logoColor=white"
+        { src: "https://img.shields.io/badge/-Prometheus-E6522C?&style=for-the-badge&logo=Prometheus&logoColor=white", name: "Prometheus" },
+        { src: "https://img.shields.io/badge/-Grafana-F46800?&style=for-the-badge&logo=Grafana&logoColor=white", name: "Grafana" }
     ];
 
     const experiences = [
@@ -148,12 +148,12 @@ document.addEventListener('DOMContentLoaded', function () {
     function loadTools(containerId, tools) {
         const container = document.getElementById(containerId);
         tools.forEach(tool => {
-            const img = document.createElement('img');
-            img.src = tool;
-            container.appendChild(img);
+            const div = document.createElement("div");
+            div.className = "tool";
+            div.innerHTML = `<img src="${tool.src}" alt="${tool.name}"><span>${tool.name}</span>`;
+            container.appendChild(div);
         });
     }
-
     function loadExperience() {
         const container = document.getElementById('experience-container');
         experiences.forEach(exp => {
