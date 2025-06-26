@@ -1,4 +1,8 @@
 document.addEventListener('DOMContentLoaded', function () {
+    const theme = localStorage.getItem('theme');
+    if (theme === 'dark') {
+        document.body.classList.add('dark');
+    }
     const skills = [
         {
             skill: "CI/CD Automation",
@@ -172,4 +176,13 @@ document.addEventListener('DOMContentLoaded', function () {
     loadTools('container-tools', containerTools);
     loadTools('monitoring-tools', monitoringTools);
     loadExperience();
+
+    const toggle = document.getElementById('dark-toggle');
+    if (toggle) {
+        toggle.addEventListener('click', () => {
+            document.body.classList.toggle('dark');
+            const current = document.body.classList.contains('dark') ? 'dark' : 'light';
+            localStorage.setItem('theme', current);
+        });
+    }
 });
