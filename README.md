@@ -2,7 +2,9 @@
 <a href="https://www.linkedin.com/in/nyanga-p-674721258/"><img src="https://img.shields.io/badge/-LinkedIn-0072b1?&style=for-the-badge&logo=linkedin&logoColor=white" /></a>
 
 ## Objective
-As a DevOps and Cloud Engineer with over 7 years of experience, I am dedicated to leveraging my expertise in cloud solutions, automation, and continuous integration/continuous deployment (CI/CD) processes to drive efficiency and innovation in technology environments.
+Results-driven self-taught DevOps Engineer with 6+ years specializing in cloud-native automation, CI/CD pipelines, and infrastructure-as-code.
+ Expert in AWS, GCP, Kubernetes (EKS, GKE), and Terraform/Terragrunt, delivering scalable, secure solutions. Proven track record: accelerated
+ deployments by 80%, cut costs 30%, and maintained 99.99% uptime across multi-cloud environments.
 
 ## Skills
 
