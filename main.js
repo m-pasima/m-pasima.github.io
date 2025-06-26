@@ -1,6 +1,11 @@
 document.addEventListener('DOMContentLoaded', function () {
+ pasimaupdate-portfolio-design-for-sophistication
     const theme = localStorage.getItem('theme');
     if (theme === 'dark') {
+
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme === 'dark') {
+    main
         document.body.classList.add('dark');
     }
     const skills = [
@@ -61,6 +66,16 @@ document.addEventListener('DOMContentLoaded', function () {
     const monitoringTools = [
         { src: "https://img.shields.io/badge/-Prometheus-E6522C?&style=for-the-badge&logo=Prometheus&logoColor=white", name: "Prometheus" },
         { src: "https://img.shields.io/badge/-Grafana-F46800?&style=for-the-badge&logo=Grafana&logoColor=white", name: "Grafana" }
+    ];
+
+    const skillLevels = [
+        { name: "AWS", level: 90 },
+        { name: "Google Cloud Platform (GCP)", level: 70 },
+        { name: "Kubernetes", level: 85 },
+        { name: "Terraform", level: 80 },
+        { name: "Jenkins", level: 75 },
+        { name: "GitHub Actions", level: 80 },
+        { name: "Docker", level: 90 }
     ];
 
     const experiences = [
@@ -155,27 +170,50 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
     function loadExperience() {
-        const container = document.getElementById('experience-container');
+        const container = document.getElementById("experience-container");
         experiences.forEach(exp => {
-            const div = document.createElement('div');
-            div.className = 'experience';
+            const div = document.createElement("div");
+            div.className = "experience";
+            const listId = "exp-" + Math.random().toString(36).slice(2,9);
             div.innerHTML = `
                 <h3>${exp.title}</h3>
                 <p><strong>${exp.date}</strong></p>
-                <ul>
-                    ${exp.responsibilities.map(responsibility => `<li>${responsibility}</li>`).join('')}
+                <ul id="${listId}" class="collapsed">
+                    ${exp.responsibilities.map(r => `<li>${r}</li>`).join('')}
                 </ul>
+                <button class="toggle-resp" data-target="${listId}">Show Details</button>
             `;
             container.appendChild(div);
         });
+        document.querySelectorAll(".toggle-resp").forEach(btn => {
+            btn.addEventListener("click", () => {
+                const ul = document.getElementById(btn.dataset.target);
+                ul.classList.toggle("collapsed");
+                btn.textContent = ul.classList.contains("collapsed") ? "Show Details" : "Hide Details";
+            });
+        });
     }
 
+    function loadSkillBars() {
+        const container = document.getElementById('skill-bars');
+        skillLevels.forEach(skill => {
+            const wrapper = document.createElement('div');
+            wrapper.className = 'skill-bar';
+            wrapper.innerHTML = `
+                <span>${skill.name}</span>
+                <div class="skill-level"><div style="width:${skill.level}%"></div></div>
+            `;
+            container.appendChild(wrapper);
+        });
+    }
     loadSkills();
     loadTools('cicd-tools', cicdTools);
     loadTools('cloud-tools', cloudTools);
     loadTools('container-tools', containerTools);
     loadTools('monitoring-tools', monitoringTools);
+    loadSkillBars();
     loadExperience();
+ pasimaupdate-portfolio-design-for-sophistication
 
     const toggle = document.getElementById('dark-toggle');
     if (toggle) {
@@ -183,6 +221,27 @@ document.addEventListener('DOMContentLoaded', function () {
             document.body.classList.toggle('dark');
             const current = document.body.classList.contains('dark') ? 'dark' : 'light';
             localStorage.setItem('theme', current);
+
+    const toggle = document.getElementById("dark-toggle");
+    if (toggle) {
+        toggle.addEventListener("click", () => {
+            document.body.classList.toggle("dark");
+            const mode = document.body.classList.contains("dark") ? "dark" : "light";
+            localStorage.setItem("theme", mode);
+        });
+    }
+    const scrollBtn = document.getElementById("scroll-top");
+    window.addEventListener("scroll", () => {
+        if (window.scrollY > 300) {
+            scrollBtn.style.display = "block";
+        } else {
+            scrollBtn.style.display = "none";
+        }
+    });
+    if (scrollBtn) {
+        scrollBtn.addEventListener("click", () => {
+            window.scrollTo({ top: 0, behavior: "smooth" });
+ main
         });
     }
 });

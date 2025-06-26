@@ -1,0 +1,35 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents 4 0 R /Resources << /Font << /F1 5 0 R >> >> >>
+endobj
+4 0 obj
+<< /Length 4144 >>
+stream
+BT
+/F1 10 Tf
+50 750 Td
+(Birmingham, UK\n M N Pasima\n in/nyanga-p-674721258 passypet@gmail.com +447533020152\n SUMMARY\n Results-driven self-taught DevOps Engineer with 6+ years specializing in cloud-native automation, CI/CD pipelines, and infrastructure-as-code.\n Expert in AWS, GCP, Kubernetes \(EKS, GKE\), and Terraform/Terragrunt, delivering scalable, secure solutions. Proven track record: accelerated\n deployments by 80%, cut costs 30%, and maintained 99.99% uptime across multi-cloud environments.\n EXPERIENCE\n DevOps Engineer\n Atomix.ai\n ?\n ,\n June 2022 - June 2025 Bury St Edmunds, Suffolk, UK\n Architected and deployed multi-AZ Kubernetes clusters \(EKS, GKE\), improving scalability by 50% and reducing infrastructure costs by 30%.\n ?\n ?\n ?\n ?\n ?\n Developed Terraform & Terragrunt IaC modules for VPC, subnets, IAM, and load balancers across AWS and GCP, enabling infrastructure\n consistency and reducing provisioning time by 70%.\n Built CI/CD pipelines with Jenkins, Maven, SonarQube, and Nexus, reducing deployment cycles by 80% and improving release quality.\n Automated configuration management with Ansible, achieving 99.99% uptime for 200+ servers and streamlining server patching.\n Customized Helm charts for deploying production tools \(Argo CD, Redis, PostgreSQL\) within private GKE clusters, increasing deployment efficiency\n by 40%.\n Spearheaded migration to containerized applications with Docker and Kubernetes, resulting in a 60% improvement in resource utilization and\n simplified application management.\n Build and Release Engineer\n SKY MEDIA\n ?\n January 2020 - May 2022 London\n ,\n Automated multi-cloud \(AWS/GCP\) infrastructure provisioning using Terraform and Terragrunt, reducing manual deployment time by 70% and\n enabling repeatable environments for over 30+ projects.\n ?\n ?\n ?\n ?\n ?\n Designed and implemented scalable network topologies?including VPCs, subnets, and load balancers?supporting 10+ production applications\n with 99.99% uptime.\n Set up and managed Jenkins pipelines integrated with Maven, SonarQube, and Nexus, accelerating build and release cycles by 60% and\n improving code quality metrics.\n Containerized and orchestrated applications using Docker and Kubernetes \(GKE\), increasing deployment efficiency by 50% and enabling zero\ndowntime rollouts.\n Developed and maintained monitoring checks using Bash scripting and ELK Stack, reducing incident response time by 40% and improving\n system observability.\n Managed IAM policies and secured internal communications, passing all compliance audits and reducing unauthorized access incidents to zero.\n Junior AWS Cloud and Linux Engineer\n Diebold Nixdorf Software Partner B.V.\n ?\n July 2017 - December 2019\n Maintained and supported over 100+ Linux servers, automating backups and real-time monitoring with shell scripting, reducing manual\n workload by 40%.\n ?\n ?\n ?\n ?\n Supported Jenkins continuous delivery pipelines and integrated SonarQube, leading to a 25% improvement in code quality and faster feedback\n loops for developers.\n Dockerized and orchestrated 20+ small-scale applications, improving deployment consistency and reducing environment-related incidents by \n35%.\n Managed version control workflows using Git and GitHub, and tracked over 150+ development tasks and releases with Jira, ensuring streamlined\n team collaboration.\n Ensured system reliability and security through regular patch management, reducing system vulnerabilities by 30% and maintaining a 99.9%\n uptime.\n?\n Administered AWS cloud infrastructure for internal projects, optimizing resource utilization and scaling compute resources to handle a 50%\n increase in application load without performance degradation.\n EDUCATION\n B A  \(Hons\) History\n University Buea ? Cameroon\n SKILLS\n Terraform, Terragrunt, Ansible\n Jenkins, Maven, SonarQube, Nexus, GitHub Actions\n Docker, Kubernetes\n Tomcat, Nginx, Linux, Bash scripting\n Git, GitHub, Jira\n AWS  IAM, cloud security, logging, and troubleshooting\n Cloud & Infrastructure: AWS \(EC2, IAM, VPC, Subnets, Load Balancers\), GCP, EKS, GKE\n) Tj
+ET
+endstream
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /Name /F1 /BaseFont /Helvetica >>
+endobj
+xref
+0 6
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000241 00000 n 
+0000004437 00000 n 
+trailer << /Size 6 /Root 1 0 R >>
+startxref
+4517
+%%EOF
