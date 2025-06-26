@@ -56,7 +56,7 @@ Results-driven self-taught DevOps Engineer with 6+ years specializing in cloud-n
 ### Senior DevOps Engineer, Atomix LTD
 **March 2023 – Present | Suffolk, United Kingdom**
 
-- Planned and architected infrastructure deployment using Draw.io, ensuring compliance with security and data regulations.
+- Planned and architected infrastructure deployment using Draw.io, ensuring compliance with security and data regulations (GDPR).
 - Set up OpenVPN for secure user access, including the creation of users and groups, and assigned permissions based on the principle of least privilege.
 - Established self-hosted CI/CD pipelines using GitHub Actions for automation processes.
 - Deployed services in Google Cloud Platform (GCP) using Terraform and Terragrunt, focusing on Infrastructure as Code (IaC). This involved setting up various services such as Virtual Private Cloud (VPC) and its components, private Google Kubernetes Engine (GKE) clusters, Artifact Registry, Identity and Access Management (IAM), service accounts, and Secrets Manager.
