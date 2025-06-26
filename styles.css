@@ -1,4 +1,19 @@
 :root {
+ pasimaupdate-portfolio-design-for-sophistication
+    --font-body: "Poppins", sans-serif;
+    --section-alt-bg: #f5f5f5;
+    --bg-color: #ffffff;
+    --text-color: #333333;
+    --accent-color: #0072b1;
+    --header-bg: var(--accent-color);
+    --header-text: #ffffff;
+    --footer-bg: #f8f9fa;
+    --card-bg: #ffffff;
+}
+
+body {
+    font-family: var(--font-body);
+
     --bg-color: #ffffff;
     --text-color: #333333;
     --accent-color: #083d77; /* navy blue */
@@ -16,6 +31,7 @@ html {
 
 body {
     font-family: 'Poppins', Arial, sans-serif;
+ main
     margin: 0;
     padding: 0;
     color: var(--text-color);
@@ -27,9 +43,14 @@ body {
 body.dark {
     --bg-color: #1a1a1a;
     --text-color: #eaeaea;
+ pasimaupdate-portfolio-design-for-sophistication
+    --header-bg: #0d4f70;
+    --footer-bg: #111111;
+
     --accent-color: #26547c;
     --header-bg: var(--accent-color);
     --footer-bg: #111;
+ main
     --card-bg: #242424;
 }
 
@@ -52,6 +73,15 @@ header nav {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+}
+
+header nav button {
+    background: transparent;
+    border: none;
+    color: inherit;
+    font-size: 1.2em;
+    cursor: pointer;
+    margin-left: 10px;
 }
 
 header nav a {
@@ -101,6 +131,26 @@ header nav a img {
 section {
     padding: 20px 0;
 }
+section:nth-of-type(even) {
+    background: var(--section-alt-bg);
+}
+
+.hero {
+    background: radial-gradient(circle at top left, var(--accent-color), #0d4f70);
+    color: white;
+    text-align: center;
+    padding: 80px 0;
+}
+
+.hero h2 {
+    font-size: 2.5em;
+    margin: 0 0 10px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin: 0;
+}
 
 section h2 {
     font-size: 1.5em;
@@ -116,14 +166,20 @@ table {
     border-collapse: collapse;
     margin: 20px 0;
     background: var(--card-bg);
+pasimaupdate-portfolio-design-for-sophistication
+
     box-shadow: 0 1px 2px rgba(0,0,0,0.1);
 }
 
 table, th, td {
+ main
     border: 1px solid #ddd;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.1);
 }
 
+
 th, td {
+    border: 1px solid #ddd;
     padding: 10px;
     text-align: left;
 }
@@ -132,11 +188,44 @@ tbody tr:nth-child(odd) {
     background-color: rgba(0,0,0,0.03);
 }
 
+ pasimaupdate-portfolio-design-for-sophistication
+
+
+ main
 .tool-category {
     margin: 20px 0;
 }
 
 .tools-container {
+ pasimaupdate-portfolio-design-for-sophistication
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 15px;
+}
+
+.tool {
+    background: var(--card-bg);
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+}
+
+.tool:hover {
+    transform: translateY(-4px);
+}
+
+.tool img {
+    height: 40px;
+    margin-bottom: 5px;
+}
+
+.tool span {
+    display: block;
+    font-size: 0.9em;
+
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
@@ -145,6 +234,7 @@ tbody tr:nth-child(odd) {
 .tools-container img {
     height: 40px;
     transition: transform 0.2s;
+ main
 }
 
 .tools-container img:hover {
@@ -216,6 +306,21 @@ body.dark .experience {
     background: var(--highlight-color);
     width: 0;
     transition: width 1s ease-out;
+}
+
+.experience {
+    background: var(--card-bg);
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: background 0.3s, border-color 0.3s;
+}
+
+body.dark .experience {
+    border-color: #333;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.5);
 }
 
 footer {
